@@ -10,7 +10,7 @@ Este projeto é um aplicativo de anotação de imagem criado usando Angular e Io
 
 ## Captura de tela
 
-![Image Annotation Example](./relative/path/to/your/image.png)
+![Image Annotation Example](https://github.com/rodrigoribeiro027/drag-drop/blob/main/src/assets/drag.png)
 
 ## Como funciona
 
