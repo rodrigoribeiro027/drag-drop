@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Image Annotation
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <div class="image-container" #imageContainer>
+    <img src="../../assets/shapes.svg" alt="Imagem" #image>
+    <div
+      class="annotation"
+      *ngFor="let annotation of annotations"
+      [ngStyle]="{ top: annotation.top + 'px', left: annotation.left + 'px' }"
+      cdkDrag
+      (cdkDragEnded)="onDragEnded($event, annotation)"
+    >
+      {{ annotation.comment }}
+    </div>
+  </div>
+
+  <div class="button-container">
+    <ion-button expand="block" shape="round" color="primary" (click)="addAnnotation()">
+      Adicionar Comentário
+    </ion-button>
+  </div>
+
+  <div>
+    <p *ngFor="let annotation of annotations">
+      Comentário: {{ annotation.comment }} - Posição: ({{ annotation.left }}, {{ annotation.top }})
+    </p>
+  </div>
+</ion-content>

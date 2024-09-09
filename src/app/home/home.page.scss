@@ -1,0 +1,28 @@
+.image-container {
+  position: relative;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.button-container {
+  padding: 10px;
+  text-align: center;
+}
+
+ion-button {
+  --background: #3880ff;
+  --color: #fff;
+  --border-radius: 20px;
+  --padding-start: 16px;
+  --padding-end: 16px;
+  font-size: 16px;
+  font-weight: 50;
+}
